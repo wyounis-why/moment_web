@@ -1,0 +1,74 @@
+/* Default styles optimized for mobile */
+.body-container {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #efecdd;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px; /* Reduced for mobile */
+  margin-bottom: 0px;
+  color: #4A4521;
+  margin-top: 10px;
+}
+
+.paragraphs-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 15px; /* Reduced padding for mobile */
+  border-radius: 15px;
+  margin: 15px; /* Reduced margin for mobile */
+  width: 90%;   /* Increased width for mobile */
+  font-size: 18px; /* Reduced font size for mobile */
+}
+
+#first {
+  margin-right: 10px; /* Reduced margin for mobile */
+  color: #A67545;
+  font-size: 24px; /* Reduced font size for mobile */
+}
+
+.left, .right {
+  align-self: center; /* Center paragraphs on mobile */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styles for larger screens (like tablets and desktops) using media queries */
+@media (min-width: 768px) {
+  .title {
+    font-size: 74px;
+  }
+
+  .paragraph {
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+    font-size: 40px;
+  }
+
+  #first {
+    margin-right: 15px;
+    font-size: 50px;
+  }
+
+  .left {
+    align-self: flex-start;
+  }
+
+  .right {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,21 @@
+.header {
+  background-color: #A67545;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(240, 172, 104, 0.3);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: sticky;   /* Add this line */
+  top: 0;            /* Add this line */
+  z-index: 1000;     /* Optional: this ensures the header is on top of other content */
+}
+
+
+
+.about-us {
+  margin-right: 20px; /* This adds some space to the right */
+}
