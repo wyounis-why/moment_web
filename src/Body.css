@@ -10,10 +10,14 @@
 .title {
   font-size: 32px; /* Reduced for mobile */
   margin-bottom: 0px;
-  color: #4A4521;
+  color: #4a4521;
   margin-top: 10px;
 }
-
+.footer_title {
+  font-size: 32px; /* Reduced for mobile */
+  color: #4a4521;
+  margin: 30px;
+}
 .paragraphs-wrapper {
   display: flex;
   flex-direction: column;
@@ -25,17 +29,18 @@
   padding: 15px; /* Reduced padding for mobile */
   border-radius: 15px;
   margin: 15px; /* Reduced margin for mobile */
-  width: 90%;   /* Increased width for mobile */
+  width: 90%; /* Increased width for mobile */
   font-size: 18px; /* Reduced font size for mobile */
 }
 
 #first {
   margin-right: 10px; /* Reduced margin for mobile */
-  color: #A67545;
+  color: #a67545;
   font-size: 24px; /* Reduced font size for mobile */
 }
 
-.left, .right {
+.left,
+.right {
   align-self: center; /* Center paragraphs on mobile */
 }
 
@@ -50,6 +55,9 @@
 @media (min-width: 768px) {
   .title {
     font-size: 74px;
+  }
+  .footer_title {
+    font-size: 34px;
   }
 
   .paragraph {

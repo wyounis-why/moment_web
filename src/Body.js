@@ -39,6 +39,9 @@ function Body() {
           friends and loved ones, following their journeys, celebrating their
           triumphs, and supporting them through challenges because
         </div>
+        <div className="flex">
+          <h1 className="footer_title"> EVERY MOMENT MATTERS</h1>
+        </div>
       </div>
     </div>
   );
