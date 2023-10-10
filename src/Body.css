@@ -13,7 +13,7 @@
   color: #4a4521;
   margin-top: 10px;
 }
-.footer_title {
+.footer_end {
   font-size: 32px; /* Reduced for mobile */
   color: #4a4521;
   margin: 30px;
@@ -56,7 +56,7 @@
   .title {
     font-size: 74px;
   }
-  .footer_title {
+  .footer_end {
     font-size: 34px;
   }
 

@@ -40,7 +40,7 @@ function Body() {
           triumphs, and supporting them through challenges because
         </div>
         <div className="flex">
-          <h1 className="footer_title"> EVERY MOMENT MATTERS</h1>
+          <h1 className="footer_end"> EVERY MOMENT MATTERS</h1>
         </div>
       </div>
     </div>
