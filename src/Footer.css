@@ -11,8 +11,21 @@
   border-top-right-radius: 15px;
   display: flex;
   justify-content: space-around;
-
 }
 .footer_title {
   margin: 0px;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 400px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer_title {
+    margin: 2px;
+  }
+  .footer_end {
+    font-size: 24px; /* Reduced for mobile */
+
+  }
 }
