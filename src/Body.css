@@ -121,3 +121,15 @@ form {
   align-items: center;
   justify-content: center;
 }
+.core {
+  color: #5b4661;
+}
+.ok {
+  color: #5c6157;
+}
+.bad {
+  color: #473f39;
+}
+.important {
+  color: #753630;
+}
