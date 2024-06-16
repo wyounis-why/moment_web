@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { verifyAccountDeletion } from "./Redux/Features/UserSlice";
+import { Link } from "react-router-dom"; // Import Link
 
 function DeleteAccount() {
   const { token } = useParams();
@@ -18,12 +19,13 @@ function DeleteAccount() {
   return (
     <div>
       <div className="flex" onClick={navigateHome}>
-        {" "}
-        {/* Add onClick event */}
-        <h1 id="first" className="title">
+        <Link to="/" id="first" className="title">
           YOUR {""}{" "}
-        </h1>
-        <h1 className="title"> MOMENT</h1>
+        </Link>
+        <Link to="/" className="title">
+          {" "}
+          MOMENT
+        </Link>
       </div>
       <h2 id="delete_title" >Confirm Account Deletion</h2>
       <p>Are you sure you want to delete your account?</p>

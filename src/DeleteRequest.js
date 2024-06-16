@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { requestAccountDeletion } from "./Redux/Features/UserSlice";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link } from "react-router-dom"; // Import Link
 
 import "./Body.css";
 
@@ -24,12 +25,13 @@ function DeleteRequest() {
   return (
     <div>
       <div className="flex" onClick={navigateHome}>
-        {" "}
-        {/* Add onClick event */}
-        <h1 id="first" className="title">
+      <Link to="/" id="first" className="title">
           YOUR {""}{" "}
-        </h1>
-        <h1 className="title"> MOMENT</h1>
+        </Link>
+        <Link to="/" className="title">
+          {" "}
+          MOMENT
+        </Link>
       </div>
       <h2 id="delete_title">Delete Account</h2>
       <form onSubmit={handleSubmit}>

@@ -15,7 +15,6 @@ const initialState = {
 export const requestAccountDeletion = createAsyncThunk(
   "user/requestAccountDeletion",
   async (email, { rejectWithValue }) => {
-    console.log(email,"email to delte")
     try {
       const response = await axios.post(`${url}/request-deletion`, { email });
       return response.data;

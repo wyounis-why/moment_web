@@ -1,21 +1,212 @@
 .header {
-  background-color: #A67545;
-  color: white;
-  padding: 10px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(240, 172, 104, 0.3);
+  position: sticky; /* Add this line */
+  top: 0; /* Add this line */
+  z-index: 1000; /* Optional: this ensures the header is on top of other content */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  position: sticky;   /* Add this line */
-  top: 0;            /* Add this line */
-  z-index: 1000;     /* Optional: this ensures the header is on top of other content */
 }
+.header_container {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); /* Applies the blur effect */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* Add this line */
+  top: 0; /* Add this line */
+  z-index: 1000; /* Optional: this ensures the header is on top of other content */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.mobile_menu {
+  display: none;
+}
+.about-us_extra-mobile {
+  display: none !important;
+}
+@media (max-width: 440px) {
+  .col {
+    padding: 2%;
+  }
+  .header_container {
+    flex-direction: column;
+    position: sticky; /* Add this line */
+  }
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
 
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  .about-us {
+    order: 4;
+    display: none;
+  }
+  .about-us_extra {
+    display: none !important;
+  }
+  .mobile_menu {
+    display: block;
+    padding: 2%;
+  }
+  .about-us_extra-mobile {
+    display: flex !important;
+  }
+  .about-us-menu {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+}
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust according to your header height */
+    left: 0;
+    width: 100%;
+    background: #fff; /* Adjust background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links div {
+    margin-bottom: 10px;
+  }
+}
+.about-us_extra:hover {
+  backdrop-filter: blur(60px); /* Applies the blur effect */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  /* background-color: #efecdd; */
+  /* background-color: #f7f6ee; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .about-us {
   margin-right: 20px; /* This adds some space to the right */
+  color: #4a4521;
+  font-size: 18px;
+  text-decoration: none;
+}
+.about-us-menu {
+  margin-right: 20px; /* This adds some space to the right */
+  color: #4a4521;
+  font-size: 15px;
+  text-decoration: none;
+}
+.about-us_extra {
+  color: #4a4521;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f7f6ee; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 1%;
+}
+.about-us_extra-mobile {
+  color: #4a4521;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f7f6ee; */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1%;
+}
+.about-us_extra-mobile {
+  a {
+    font-size: 14px !important;
+  }
+}
+.title-sm {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  color: #4a4521;
+  cursor: pointer;
+  font-size: 26px;
+  text-decoration: none;
+}
+.about_wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  padding: 4%;
+  margin: 4%;
+  border-radius: 20px;
+  line-height: 2;
+}
+.flex_about {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  padding: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  border-radius: 20px;
+}
+.start {
+  padding-right: 7px;
+  font-size: 50px;
+  color: #a67545;
+}
+.start_ {
+  padding-right: 7px;
+  font-size: 50px;
+  color: #4a4521;
+}
+
+.burger {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.burger.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.menu {
+  display: none;
+  /* flex-direction: column; */
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: inherit;
+  justify-content: center;
+}
+
+.menu.open {
+  display: flex;
 }
