@@ -30,7 +30,7 @@
 }
 @media (max-width: 440px) {
   .col {
-    padding: 2%;
+    padding: 4% !important;
   }
   .header_container {
     flex-direction: column;
@@ -58,12 +58,25 @@
   }
   .about-us_extra-mobile {
     display: flex !important;
+    flex-direction: row !important;
+    background-color: #f7f6ee;
+    padding: 2%;
+    border-radius: 10px;
+  }
+
+  .about-us_extra-mobile {
+    a {
+      font-size: 14px !important;
+    }
   }
   .about-us-menu {
     display: block;
     padding: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
     text-decoration: none;
     color: #333;
+    margin-right: 0px !important;
   }
 }
 @media (max-width: 768px) {
@@ -132,9 +145,6 @@
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  /* background-color: #f7f6ee; */
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
   padding: 1%;
 }
 .about-us_extra-mobile {
@@ -209,4 +219,7 @@
 
 .menu.open {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }

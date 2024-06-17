@@ -45,19 +45,6 @@ function Header() {
             APP
           </Link>
         </div>
-          <div className="about-us_extra-mobile">
-            <Link to="/" id="first" className="title-sm">
-              DOWNLOAD
-            </Link>
-            <Link
-              to="https://apps.apple.com/us/app/your-moment/id6448125111"
-              target="_blank"
-              className="title-sm"
-            >
-              {" "}
-              APP
-            </Link>
-          </div>
         <div className="mobile_menu">
           <div onClick={() => setOpen(!open)}>
             <div className={`burger ${open ? "open" : ""}`} />
@@ -67,6 +54,19 @@ function Header() {
         </div>
       </div>
       <div className={`menu ${open ? "open" : ""}`}>
+        <div className="about-us_extra-mobile">
+          <Link to="/" id="first" className="title-sm">
+            DOWNLOAD
+          </Link>
+          <Link
+            to="https://apps.apple.com/us/app/your-moment/id6448125111"
+            target="_blank"
+            className="title-sm"
+          >
+            {" "}
+            APP
+          </Link>
+        </div>
         <div className="about-us-menu">
           <Link
             to="https://yourmoment.medium.com/introducing-your-moment-rediscover-the-art-of-journaling-in-a-social-world-7670d975a595"
