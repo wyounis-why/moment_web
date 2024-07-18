@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { verifyAccountDeletion } from "./Redux/Features/UserSlice";
 import { Link } from "react-router-dom"; // Import Link
 
